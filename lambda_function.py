@@ -125,7 +125,7 @@ def lambda_handler(event, context):
     # Retrieve API keys from environment variables (set these in your Lambda configuration)
     openai_api_key = os.environ.get("OPENAI_API_KEY")
     creatomate_api_key = os.environ.get("CREATOMATE_API_KEY")
-    s3_bucket = "myvideooutputbucket"  # Your S3 bucket name
+    s3_bucket = "YOUR_BUCKET_NAME"  # Your S3 bucket name
 
     if not openai_api_key or not creatomate_api_key:
         return {
